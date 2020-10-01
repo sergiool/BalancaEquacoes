@@ -1,0 +1,152 @@
+fileFormatVersion: 2
+guid: 904674fad33740e408a29d68b43fc08e
+timeCreated: 1533864964
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Balanca
+    100002: BalancaMadeira
+    100004: Cenario
+    100006: Eixo
+    100008: EixoMadeira
+    100010: EixoMadeira.001
+    100012: //RootNode
+    100014: Peso
+    100016: PratoD
+    100018: PratoE
+    100020: Sun
+    100022: Sun.001
+    400000: Balanca
+    400002: BalancaMadeira
+    400004: Cenario
+    400006: Eixo
+    400008: EixoMadeira
+    400010: EixoMadeira.001
+    400012: //RootNode
+    400014: Peso
+    400016: PratoD
+    400018: PratoE
+    400020: Sun
+    400022: Sun.001
+    2100000: Cinza.001
+    2100002: Marrom
+    2100004: Marrom.001
+    2100006: Verde
+    2100008: Azul
+    2100010: Branco
+    2100012: Cinza
+    2100014: Preto
+    2100016: Amarelo
+    2100018: Roxo
+    2300000: Balanca
+    2300002: BalancaMadeira
+    2300004: Cenario
+    2300006: Eixo
+    2300008: EixoMadeira
+    2300010: EixoMadeira.001
+    2300012: Peso
+    2300014: PratoD
+    2300016: PratoE
+    2300018: //RootNode
+    3300000: Balanca
+    3300002: BalancaMadeira
+    3300004: Cenario
+    3300006: Eixo
+    3300008: EixoMadeira
+    3300010: EixoMadeira.001
+    3300012: Peso
+    3300014: PratoD
+    3300016: PratoE
+    3300018: //RootNode
+    4300000: EixoMadeira.001
+    4300002: EixoMadeira
+    4300004: BalancaMadeira
+    4300006: Cenario
+    4300008: Peso
+    4300010: Balanca
+    4300012: Eixo
+    4300014: PratoD
+    4300016: PratoE
+    10800000: Sun
+    10800002: Sun.001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.2
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
