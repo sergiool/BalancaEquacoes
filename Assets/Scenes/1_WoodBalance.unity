@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6996171}
   m_Layer: 0
-  m_Name: SCENERY
+  m_Name: Scenery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 31750966}
   - component: {fileID: 31750965}
   m_Layer: 5
-  m_Name: BlockFactory_Background
+  m_Name: BlockFactoryBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -644,7 +644,7 @@ GameObject:
   - component: {fileID: 35524783}
   - component: {fileID: 35524784}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: DirectionalLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -662,7 +662,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.0000001, z: 0.99999994}
   m_Children: []
   m_Father: {fileID: 2101745354}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &35524784
 Light:
@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 47691543}
   - component: {fileID: 47691542}
   m_Layer: 5
-  m_Name: Blackboard_Portrait (3)
+  m_Name: BlackboardPortrait_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -979,7 +979,7 @@ GameObject:
   - component: {fileID: 99138490}
   - component: {fileID: 99138489}
   m_Layer: 5
-  m_Name: Blackboard_Portrait (1)
+  m_Name: BlackboardPortrait_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1052,9 +1052,9 @@ GameObject:
   m_Component:
   - component: {fileID: 100680138}
   - component: {fileID: 100680139}
-  m_Layer: 9
-  m_Name: 2D (Gancho)
-  m_TagString: Gancho
+  m_Layer: 10
+  m_Name: BottomRight_2 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1096,7 +1096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 103939801}
   m_Layer: 0
-  m_Name: p2
+  m_Name: point_2
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1539,7 +1539,7 @@ GameObject:
   m_Component:
   - component: {fileID: 136765717}
   m_Layer: 0
-  m_Name: p3
+  m_Name: point_3
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1648,7 +1648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 152146435}
   m_Layer: 0
-  m_Name: p11
+  m_Name: point_11
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1678,7 +1678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153955380}
   m_Layer: 0
-  m_Name: EsquerdaAerea
+  m_Name: TopLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1713,7 +1713,7 @@ GameObject:
   - component: {fileID: 173796659}
   - component: {fileID: 173796658}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: DirectionalLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1792,7 +1792,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2101745354}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 40.922, y: -25.173, z: 6.748}
 --- !u!1 &187627041
 GameObject:
@@ -2226,9 +2226,9 @@ GameObject:
   m_Component:
   - component: {fileID: 232905385}
   - component: {fileID: 232905386}
-  m_Layer: 9
-  m_Name: 3E (Gancho)
-  m_TagString: Gancho
+  m_Layer: 10
+  m_Name: BottomLeft_3 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2270,7 +2270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 244073934}
   m_Layer: 0
-  m_Name: p16
+  m_Name: point_16
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2396,8 +2396,8 @@ GameObject:
   - component: {fileID: 291335431}
   - component: {fileID: 291335432}
   m_Layer: 11
-  m_Name: 2E (Gancho)
-  m_TagString: Gancho
+  m_Name: TopLeft_2 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2539,7 +2539,7 @@ GameObject:
   - component: {fileID: 304197927}
   - component: {fileID: 304197931}
   m_Layer: 5
-  m_Name: Ingame_HUD (HUD)
+  m_Name: IngameHUD (HUD)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2652,7 +2652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 305637517}
   m_Layer: 8
-  m_Name: InstanceSpot4
+  m_Name: InstanceSpot_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2682,9 +2682,9 @@ GameObject:
   m_Component:
   - component: {fileID: 327659921}
   - component: {fileID: 327659922}
-  m_Layer: 9
-  m_Name: 1D (Gancho)
-  m_TagString: Gancho
+  m_Layer: 10
+  m_Name: BottomRight_1 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2727,7 +2727,7 @@ GameObject:
   - component: {fileID: 328443913}
   - component: {fileID: 328443912}
   m_Layer: 0
-  m_Name: CONTROLLER (GameController)
+  m_Name: Singleton (GameController)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2777,9 +2777,9 @@ GameObject:
   m_Component:
   - component: {fileID: 361605732}
   - component: {fileID: 361605734}
-  m_Layer: 9
-  m_Name: 3D (Gancho)
-  m_TagString: Gancho
+  m_Layer: 10
+  m_Name: BottomRight_3 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2871,7 +2871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 406956652}
   m_Layer: 0
-  m_Name: Esquerda
+  m_Name: BottomLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2905,7 +2905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 412387627}
   m_Layer: 0
-  m_Name: DireitaAerea
+  m_Name: TopRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3018,7 +3018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 446011079}
   m_Layer: 0
-  m_Name: p8
+  m_Name: point_8
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3048,9 +3048,9 @@ GameObject:
   m_Component:
   - component: {fileID: 469112658}
   - component: {fileID: 469112659}
-  m_Layer: 9
-  m_Name: 4D (Gancho)
-  m_TagString: Gancho
+  m_Layer: 10
+  m_Name: BottomRight_4 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3277,8 +3277,8 @@ GameObject:
   - component: {fileID: 478549338}
   - component: {fileID: 478549339}
   m_Layer: 11
-  m_Name: 4D (Gancho)
-  m_TagString: Gancho
+  m_Name: TopRight_4 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3476,7 +3476,7 @@ GameObject:
   - component: {fileID: 514163618}
   - component: {fileID: 514163619}
   m_Layer: 0
-  m_Name: Eixo
+  m_Name: Axis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3625,7 +3625,7 @@ GameObject:
   m_Component:
   - component: {fileID: 580916719}
   m_Layer: 0
-  m_Name: p12
+  m_Name: point_12
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3655,7 +3655,7 @@ GameObject:
   m_Component:
   - component: {fileID: 608099371}
   m_Layer: 8
-  m_Name: InstanceSpot2
+  m_Name: InstanceSpot_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3759,7 +3759,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: cfb2bad1853912f418c06dd80b9c6cae, type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cfb2bad1853912f418c06dd80b9c6cae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4086,7 +4086,7 @@ GameObject:
   - component: {fileID: 681726977}
   - component: {fileID: 681726976}
   m_Layer: 5
-  m_Name: 4More
+  m_Name: WeightKit(4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4215,7 +4215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 690040246}
   m_Layer: 0
-  m_Name: Game_Controllers
+  m_Name: IngameSingletons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4730,7 +4730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 747374238}
   m_Layer: 0
-  m_Name: p10
+  m_Name: point_10
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4760,7 +4760,7 @@ GameObject:
   m_Component:
   - component: {fileID: 786895904}
   m_Layer: 8
-  m_Name: InstanceSpot1
+  m_Name: InstanceSpot_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4793,7 +4793,7 @@ GameObject:
   - component: {fileID: 808238495}
   - component: {fileID: 808238494}
   m_Layer: 5
-  m_Name: Weight2
+  m_Name: Weight_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4950,7 +4950,7 @@ GameObject:
   - component: {fileID: 821160064}
   - component: {fileID: 821160063}
   m_Layer: 5
-  m_Name: BotaoVermelho
+  m_Name: RedButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5691,8 +5691,8 @@ GameObject:
   - component: {fileID: 873758253}
   - component: {fileID: 873758254}
   m_Layer: 11
-  m_Name: 1D (Gancho)
-  m_TagString: Gancho
+  m_Name: TopRight_1 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5939,7 +5939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 916192565}
   m_Layer: 0
-  m_Name: Cenario
+  m_Name: Scenery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5978,7 +5978,7 @@ GameObject:
   - component: {fileID: 926064942}
   - component: {fileID: 926064941}
   m_Layer: 10
-  m_Name: Chao
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6165,7 +6165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 945840175}
   m_Layer: 0
-  m_Name: Direita
+  m_Name: BottomRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6864,9 +6864,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1067812733}
   - component: {fileID: 1067812734}
-  m_Layer: 9
-  m_Name: 1E (Gancho)
-  m_TagString: Gancho
+  m_Layer: 10
+  m_Name: BottomLeft_1 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6908,7 +6908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1073675402}
   m_Layer: 0
-  m_Name: p7
+  m_Name: point_7
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -6940,7 +6940,7 @@ GameObject:
   - component: {fileID: 1096112406}
   - component: {fileID: 1096112405}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Portrait_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7258,7 +7258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1124665479}
   m_Layer: 0
-  m_Name: GAME
+  m_Name: Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7544,7 +7544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1158000103}
   m_Layer: 0
-  m_Name: p13
+  m_Name: point_13
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -7836,8 +7836,8 @@ GameObject:
   - component: {fileID: 1219038712}
   - component: {fileID: 1219038711}
   - component: {fileID: 1219038709}
-  m_Layer: 10
-  m_Name: Estante
+  m_Layer: 12
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8209,7 +8209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1262894897}
   m_Layer: 0
-  m_Name: Quadro
+  m_Name: BlackBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8246,7 +8246,7 @@ GameObject:
   - component: {fileID: 1268278623}
   - component: {fileID: 1268278624}
   m_Layer: 0
-  m_Name: Clique
+  m_Name: ClickSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8372,7 +8372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1271820426}
   m_Layer: 0
-  m_Name: p15
+  m_Name: point_15
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -8517,7 +8517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1327242545}
   m_Layer: 0
-  m_Name: p5
+  m_Name: point_5
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -8622,7 +8622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1359036960}
   m_Layer: 0
-  m_Name: p6
+  m_Name: point_6
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -8688,7 +8688,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1392560500}
   m_Layer: 0
-  m_Name: p14
+  m_Name: point_14
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -8718,7 +8718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1394776167}
   m_Layer: 8
-  m_Name: InstanceSpot5
+  m_Name: InstanceSpot_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8795,7 +8795,23 @@ MonoBehaviour:
   - {fileID: 1914035681}
   - {fileID: 305637516}
   - {fileID: 1394776166}
-  _weightBlockKitInitialPositions: []
+  _weightBlockKitInitialPositions:
+  - {fileID: 2054529564}
+  - {fileID: 103939800}
+  - {fileID: 136765716}
+  - {fileID: 1440728346}
+  - {fileID: 1327242544}
+  - {fileID: 1359036959}
+  - {fileID: 1073675401}
+  - {fileID: 446011078}
+  - {fileID: 1403744819}
+  - {fileID: 747374237}
+  - {fileID: 152146434}
+  - {fileID: 580916718}
+  - {fileID: 1158000102}
+  - {fileID: 1392560499}
+  - {fileID: 1271820425}
+  - {fileID: 244073933}
 --- !u!1 &1401348807
 GameObject:
   m_ObjectHideFlags: 0
@@ -8885,7 +8901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1403744820}
   m_Layer: 0
-  m_Name: p9
+  m_Name: point_9
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -8916,8 +8932,8 @@ GameObject:
   - component: {fileID: 1421384765}
   - component: {fileID: 1421384766}
   m_Layer: 11
-  m_Name: 2D (Gancho)
-  m_TagString: Gancho
+  m_Name: TopRight_2 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8960,7 +8976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1440728347}
   m_Layer: 0
-  m_Name: p4
+  m_Name: point_4
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -9276,8 +9292,8 @@ GameObject:
   - component: {fileID: 1464360666}
   - component: {fileID: 1464360667}
   m_Layer: 11
-  m_Name: 3E (Gancho)
-  m_TagString: Gancho
+  m_Name: TopLeft_3 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9397,7 +9413,7 @@ GameObject:
   - component: {fileID: 1472531179}
   - component: {fileID: 1472531178}
   m_Layer: 0
-  m_Name: Fundo
+  m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9649,8 +9665,8 @@ GameObject:
   - component: {fileID: 1496149467}
   - component: {fileID: 1496149468}
   m_Layer: 11
-  m_Name: 1E (Gancho)
-  m_TagString: Gancho
+  m_Name: TopLeft_1 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9693,8 +9709,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1498952715}
   - component: {fileID: 1498952716}
-  m_Layer: 10
-  m_Name: Estante
+  m_Layer: 12
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10120,6 +10136,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2b9e5025caaa29b479e950c2faac3b3b, type: 3}
+      propertyPath: m_Name
+      value: Scenery
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2b9e5025caaa29b479e950c2faac3b3b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.0185058
@@ -10266,7 +10286,7 @@ GameObject:
   - component: {fileID: 1563392441}
   - component: {fileID: 1563392440}
   m_Layer: 5
-  m_Name: Weight4
+  m_Name: Weight_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10356,9 +10376,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1586444683}
   - component: {fileID: 1586444684}
-  m_Layer: 9
-  m_Name: 4E (Gancho)
-  m_TagString: Gancho
+  m_Layer: 10
+  m_Name: BottomLeft_4 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10478,7 +10498,7 @@ GameObject:
   - component: {fileID: 1594021281}
   - component: {fileID: 1594021280}
   m_Layer: 5
-  m_Name: Blackboard_Portrait
+  m_Name: BlackboardPortrait_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10730,8 +10750,8 @@ GameObject:
   - component: {fileID: 1636186823}
   - component: {fileID: 1636186824}
   m_Layer: 11
-  m_Name: 4E (Gancho)
-  m_TagString: Gancho
+  m_Name: TopLeft_4 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10865,7 +10885,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2101745354}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1657661191
 GameObject:
@@ -10878,7 +10898,7 @@ GameObject:
   - component: {fileID: 1657661193}
   - component: {fileID: 1657661192}
   m_Layer: 0
-  m_Name: Ceu
+  m_Name: Skybox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11250,9 +11270,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1701671688}
   - component: {fileID: 1701671689}
-  m_Layer: 9
-  m_Name: 2E (Gancho)
-  m_TagString: Gancho
+  m_Layer: 10
+  m_Name: BottomLeft_2 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11297,7 +11317,7 @@ GameObject:
   - component: {fileID: 1705269269}
   - component: {fileID: 1705269268}
   m_Layer: 5
-  m_Name: MENU_HUD
+  m_Name: MenuHUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11492,8 +11512,8 @@ GameObject:
   - component: {fileID: 1716088467}
   - component: {fileID: 1716088468}
   m_Layer: 11
-  m_Name: 3D (Gancho)
-  m_TagString: Gancho
+  m_Name: TopRight_3 (Hook)
+  m_TagString: Hook
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11650,7 +11670,7 @@ GameObject:
   - component: {fileID: 1778545732}
   - component: {fileID: 1778545736}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11727,7 +11747,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2101745354}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1778545736
 AudioSource:
@@ -12161,7 +12181,7 @@ GameObject:
   - component: {fileID: 1808215966}
   - component: {fileID: 1808215965}
   m_Layer: 5
-  m_Name: Exit_Button
+  m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12386,7 +12406,7 @@ GameObject:
   - component: {fileID: 1828809198}
   - component: {fileID: 1828809197}
   m_Layer: 5
-  m_Name: Weight3
+  m_Name: Weight_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12479,7 +12499,7 @@ GameObject:
   - component: {fileID: 1831061450}
   - component: {fileID: 1831061449}
   m_Layer: 5
-  m_Name: Weight1
+  m_Name: Weight_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12659,7 +12679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1873446996}
   m_Layer: 0
-  m_Name: MENU
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12693,7 +12713,7 @@ GameObject:
   - component: {fileID: 1876226553}
   - component: {fileID: 1876226552}
   m_Layer: 5
-  m_Name: BlockFactory_Toggle
+  m_Name: BlockFactoryToggle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12912,7 +12932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1914035682}
   m_Layer: 8
-  m_Name: InstanceSpot3
+  m_Name: InstanceSpot_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12944,7 +12964,7 @@ GameObject:
   - component: {fileID: 1925813860}
   - component: {fileID: 1925813859}
   m_Layer: 5
-  m_Name: Blackboard_Portrait (2)
+  m_Name: BlackboardPortrait_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13092,8 +13112,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1946437598}
   - component: {fileID: 1946437599}
-  m_Layer: 10
-  m_Name: PeBalanca
+  m_Layer: 12
+  m_Name: BalanceBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13170,7 +13190,7 @@ GameObject:
   - component: {fileID: 1951743537}
   - component: {fileID: 1951743536}
   m_Layer: 0
-  m_Name: Apoio
+  m_Name: BalanceSupport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13426,7 +13446,7 @@ GameObject:
   - component: {fileID: 2005713107}
   - component: {fileID: 2005713106}
   m_Layer: 5
-  m_Name: BotaoVerde
+  m_Name: GreenButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13501,7 +13521,7 @@ GameObject:
   - component: {fileID: 2009526298}
   - component: {fileID: 2009526297}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Portrait_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13614,8 +13634,8 @@ GameObject:
   - component: {fileID: 2043852176}
   - component: {fileID: 2043852175}
   - component: {fileID: 2043852174}
-  m_Layer: 10
-  m_Name: Colisor
+  m_Layer: 12
+  m_Name: Ceil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13723,7 +13743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2054529565}
   m_Layer: 0
-  m_Name: p1
+  m_Name: point_1
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -14027,7 +14047,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2101745354}
   m_Layer: 0
-  m_Name: ETC
+  m_Name: Etc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14044,10 +14064,10 @@ Transform:
   m_LocalPosition: {x: -1.4685059, y: 1.0571289, z: 0.3828125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1778545735}
   - {fileID: 173796659}
-  - {fileID: 1644696838}
   - {fileID: 35524783}
+  - {fileID: 1778545735}
+  - {fileID: 1644696838}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

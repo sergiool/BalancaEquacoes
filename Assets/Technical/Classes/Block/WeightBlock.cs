@@ -89,15 +89,15 @@ namespace WeightBlocks
         [SerializeField]
         private AudioSource _impactSound = null;
         [SerializeField]
-        private GameObject _smokeVfxPrefab = null;
+        private GameObject _impactVfxPrefab = null;
         public void OnCollisionEnter(Collision collision)
         {
-            if (_smokeVfxPrefab != null)
+            if (_impactVfxPrefab != null)
             {
                 if (collision.transform.gameObject.layer == 10)
                 {
-                    _smokeVfxPrefab.SetActive(false);
-                    _smokeVfxPrefab.SetActive(true);
+                    _impactVfxPrefab.SetActive(false);
+                    _impactVfxPrefab.SetActive(true);
                     _impactSound.Play();
                 }
             }

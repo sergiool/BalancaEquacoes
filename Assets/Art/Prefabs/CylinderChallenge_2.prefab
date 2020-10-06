@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4042880186745896}
   - component: {fileID: 65100037959408234}
-  m_Layer: 0
-  m_Name: Corpo
+  m_Layer: 8
+  m_Name: Weight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +56,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4939567173600164}
   - component: {fileID: 82538068609964130}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Impact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,8 +184,8 @@ GameObject:
   - component: {fileID: 4190308612598646}
   - component: {fileID: 23115525558795690}
   - component: {fileID: 102965509142753276}
-  m_Layer: 0
-  m_Name: Peso
+  m_Layer: 8
+  m_Name: Weight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -279,8 +279,8 @@ GameObject:
   - component: {fileID: 4305193004787546}
   - component: {fileID: 54343708205308042}
   - component: {fileID: 607852501675214721}
-  m_Layer: 0
-  m_Name: CylinderWeightChallenge
+  m_Layer: 8
+  m_Name: CylinderChallenge_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -337,7 +337,7 @@ MonoBehaviour:
   _weightValueVisualText: {fileID: 0}
   _weightUnitVisualText: {fileID: 0}
   _impactSound: {fileID: 82538068609964130}
-  _smokeVfxPrefab: {fileID: 100000, guid: 58487edd4a590824280e02f3d0b276ef, type: 3}
+  _impactVfxPrefab: {fileID: 0}
   _grabSound: {fileID: 82826939152954088}
   _puffVfxPrefab: {fileID: 100000, guid: 3d3ad0324af0e7e4080f371c557b93aa, type: 3}
   _puffVfxPositionAdjustment: -1.2
@@ -352,8 +352,8 @@ GameObject:
   - component: {fileID: 4018379236791898}
   - component: {fileID: 33266806292068286}
   - component: {fileID: 23521238091392140}
-  m_Layer: 0
-  m_Name: Cilindro4
+  m_Layer: 8
+  m_Name: Cylinder_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -433,7 +433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4941732756828812}
   - component: {fileID: 82826939152954088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -561,8 +561,8 @@ GameObject:
   - component: {fileID: 4030994053663318}
   - component: {fileID: 33810649150754534}
   - component: {fileID: 23870128753181868}
-  m_Layer: 0
-  m_Name: Gancho
+  m_Layer: 8
+  m_Name: Hook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -642,7 +642,7 @@ GameObject:
   - component: {fileID: 4310380459515726}
   - component: {fileID: 198004099918406028}
   - component: {fileID: 199651805294103402}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SmokePuffGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
