@@ -15,8 +15,8 @@ namespace Common.Controllers
         [SerializeField]
         private GameObject[] _weightBlockPrefab = null;
 
-        [SerializeField]
-        private GameObject[] _weightBlockInitialPositions = null;
+       // [SerializeField]
+       // private GameObject[] _weightBlockInitialPositions = null;
 
         [SerializeField]
         private GameObject[] _weightBlockKitInitialPositions = null;

@@ -1,4 +1,4 @@
-﻿using Common.Controllers;
+using Common.Controllers;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,7 +18,7 @@ namespace Challenges
         private float _trueWeight;
         private float _convertedWeight;
 
-        public override void StartChallenge()
+        public override void StartChallenge(string challengeP)
         {
             _confirmAnswerButton.SetActive(true);
             _nextChallengeButton.SetActive(false);

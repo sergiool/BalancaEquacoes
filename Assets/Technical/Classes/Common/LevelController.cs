@@ -22,12 +22,12 @@ namespace Common.Controllers
             SetChallenges();
         }
 
-        public void StartChallenge(int challengeId)
+        public void StartChallenge(int challengeId, string challengeP)
         {
             if (challengeId != -1)
             {
                 PlayableChallenges[challengeId].gameObject.SetActive(true);
-                PlayableChallenges[challengeId].StartChallenge();
+                PlayableChallenges[challengeId].StartChallenge(challengeP);
             }
         }
 
