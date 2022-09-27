@@ -8,7 +8,14 @@ namespace Utility
     {
         public static float TrueWeight(float weight, int unit)
         {
-            return weight * Mathf.Pow(10, 3 - unit);
+            if(weight<0)
+            {
+                return weight*(-1)* Mahtf.pow(10, 3 - unit);
+            }
+            else()
+            {
+                return weight * Mathf.Pow(10, 3 - unit);
+            }
         }
     }
 }
