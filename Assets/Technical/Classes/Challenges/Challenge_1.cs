@@ -14,7 +14,7 @@ namespace Challenges
         private GameObject _nextChallengeButton;
         private float _trueWeight;
 
-        public override void StartChallenge()
+        public override void StartChallenge(string challengeP)
         {
             int _desiredHook=0;
             int _numberOfWeightBlocks;
