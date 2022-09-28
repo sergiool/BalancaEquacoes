@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Common.Controllers
 {
@@ -26,11 +27,25 @@ namespace Common.Controllers
         public GameObject Menu;
         public GameObject Game;
 
+        [SerializeField]
+        private InputField _answerInputValueX;
+        [SerializeField]
+        private InputField _answerInputValueEq;
+
         public void StartGame(int gameModeId)
         {
             Menu.SetActive(false);
             Game.SetActive(true);
+            GameController.Singleton.BlockController.ResetWeightBlocks();
             LevelController.StartChallenge(challengeId: gameModeId);
+        }
+
+        public void StartCustomGame(int gameModeId)
+        {
+            Menu.SetActive(false);
+            Game.SetActive(true);
+            GameController.Singleton.BlockController.ResetWeightBlocks();
+            LevelController.StartChallenge(challengeId: gameModeId, _answerInputValueX.text, _answerInputValueEq.text);
         }
 
         public void ExitGame()
