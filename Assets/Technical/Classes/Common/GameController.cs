@@ -28,14 +28,24 @@ namespace Common.Controllers
         public GameObject Game;
 
         [SerializeField]
-        private InputField _answerInputValue;
+        private InputField _answerInputValueX;
+        [SerializeField]
+        private InputField _answerInputValueEq;
 
         public void StartGame(int gameModeId)
         {
             Menu.SetActive(false);
             Game.SetActive(true);
             GameController.Singleton.BlockController.ResetWeightBlocks();
-            LevelController.StartChallenge(challengeId: gameModeId, _answerInputValue.text);
+            LevelController.StartChallenge(challengeId: gameModeId);
+        }
+
+        public void StartCustomGame(int gameModeId)
+        {
+            Menu.SetActive(false);
+            Game.SetActive(true);
+            GameController.Singleton.BlockController.ResetWeightBlocks();
+            LevelController.StartChallenge(challengeId: gameModeId, _answerInputValueX.text, _answerInputValueEq.text);
         }
 
         public void ExitGame()
