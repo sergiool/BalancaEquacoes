@@ -43,7 +43,7 @@ namespace Balance
             else
                 UnbalancedState(_totalWeight);
         }
-        private void BalancedState()
+        public void BalancedState()
         {
             _desiredRotationZ = 0;
 
@@ -56,7 +56,7 @@ namespace Balance
             if (_totalWeightLeftSide == 0 && _totalWeightRightSide == 0)
                 _winSoundFeedback.Play();
         }
-        private void UnbalancedState(float totalWeight)
+        public void UnbalancedState(float totalWeight)
         {
             if (totalWeight > 0)
                 _desiredRotationZ = Mathf.Min(25.0f, (_totalWeightLeftSide / _totalWeightRightSide) * 6.875f);

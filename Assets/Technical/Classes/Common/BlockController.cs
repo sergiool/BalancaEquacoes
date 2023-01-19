@@ -26,7 +26,8 @@ namespace Common.Controllers
             GameController.Singleton.PlayClickSound();
 
             weightBlockPosition.z = 2.148f;
-
+            if (weightBlockPosition.x==0){
+                weightBlockPosition.x = -6.378f;}
             var weightBlockPrefabIndex = 0;
 
             if (weightValue > 0)

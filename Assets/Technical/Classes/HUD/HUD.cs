@@ -12,8 +12,8 @@ namespace Assets.Technical.Classes.HUD
         private Dropdown _weightUnit;
         [SerializeField]
         private GameObject _weightBlockCreationPanel;
-        [SerializeField]
-        private GameObject _authorCreditPanel;
+        //[SerializeField]
+      //  private GameObject _authorCreditPanel;
 
         private void Start()
         {

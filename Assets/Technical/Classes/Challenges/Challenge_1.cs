@@ -8,14 +8,32 @@ using Random = UnityEngine.Random;
 
 namespace Challenges
 {
+    /*public class balance1 : MainBalance
+    {
+        float _totalWeight=MainBalance.GetTotalWeight();
+
+                    if (_totalWeight == 0)
+                        /*_answerCorrectionFeedback.text = "Correto !";
+                        _confirmAnswerButton.SetActive(false);
+                        _nextChallengeButton.SetActive(true);
+                        MainBalance.BalancedState();
+                    else
+                        MainBalance.UnbalancedState(_totalWeight);
+
+    }*/
     public class Challenge_1 : Challenge
     {
+        
+       // private GameObject[] _weightBlockKitInitialPositions = null;
         [SerializeField]
         private GameObject _nextChallengeButton;
+        [SerializeField]
+        private GameObject _nextChallengeButton2;
         private float _trueWeight;
 
         public override void StartChallenge()
-        {
+        {//***********************************************1
+        
             int _desiredHook=0;
             int _numberOfWeightBlocks;
             float _trueWeight;
@@ -69,7 +87,19 @@ namespace Challenges
         [SerializeField]
         private GameObject _confirmAnswerButton;
         [SerializeField]
+        private GameObject _checkEquiButton;
+        [SerializeField]
         private Text _answerCorrectionFeedback;
+        [SerializeField]
+        private GameObject _GreenButton;
+        [SerializeField]
+        private GameObject _RedButton;
+        [SerializeField]
+        private GameObject _UnitInput;
+        [SerializeField]
+        private GameObject _ValueInput;
+        [SerializeField]
+        private GameObject _BlockFactorytoggle;
         public void CheckAnswer()
         {
             if (_answerInputValue.text != "")
@@ -87,14 +117,15 @@ namespace Challenges
                 }
             }
         }
-
+    
         public override void StartChallenge(string challengeX, string challengeP)
-        {
+        {//******************************************************************2
             int _desiredHook=0;
             float _convertedWeight;
 
             _confirmAnswerButton.SetActive(true);
             _nextChallengeButton.SetActive(false);
+            
             GameController.Singleton.BlockController.ResetWeightBlocks();
 
 
@@ -158,8 +189,55 @@ namespace Challenges
                 GameController.Singleton.BlockController.CreateChallengeBlock(randomWeight, _convertedWeight, 0, GameController.Singleton.LevelController.MainBalance.GetHooks()[_desiredHook].transform.position);
             }*/
 
-        }
-    }
+        }//**********************************************************************3
+        public override void StartChallengeONLYWEIGHT(string[] peso,string nooblocks )
+        {
+            Vector3 weightBlockPosition=new Vector3(1.378f,0.0f,0.0f);
+            for (int i = 0; i < int.Parse(nooblocks); i++)
+            {
+                
+                GameController.Singleton.BlockController.CreateDefaultBlock(float.Parse(peso[i]), 0, weightBlockPosition);
+                weightBlockPosition.x+=1.0f;
+            }
+            _confirmAnswerButton.SetActive(false);
+            _nextChallengeButton.SetActive(false);
+            _nextChallengeButton2.SetActive(false);
+            _UnitInput.SetActive(false);
+            _ValueInput.SetActive(false);
+            _BlockFactorytoggle.SetActive(false);
+            _answerInputValue.text = "";
+            _answerCorrectionFeedback.text = "";
+           // float totw=MainBalance._totalWeight;
+           /*
+            if (_totalWeight == 0)
+            {
+                _answerCorrectionFeedback.text = "Correto !";
+                _confirmAnswerButton.SetActive(false);
+                _nextChallengeButton.SetActive(true);
+                Balance.MainBalance.BalancedState();
+            }
+            else
+            {
 
+               Balance.MainBalance.UnbalancedState(_totalWeight);
+              }*/
+        }
+        public void CheckEqui()
+        {
+            {
+                if(_GreenButton.activeSelf==true){
+                    Debug.Log("TACERTO!");
+                    _answerCorrectionFeedback.text = "Em equiíbrio !";
+                    _nextChallengeButton2.SetActive(true);
+                }
+                else{
+                    _confirmAnswerButton.SetActive(false);
+                    _answerCorrectionFeedback.text = "Desbalanceada !";
+                    _nextChallengeButton2.SetActive(false);
+                    Debug.Log("NAO TA");
+                }
+            }
+        }
+    } 
     
 }
