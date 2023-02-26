@@ -1,10 +1,10 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Firebase.Storage;
 using System.IO;
 
-public class FirestoreLoader : MonoBehaviour
+public class cloadstorage : MonoBehaviour
 {
     FirebaseStorage storage;
     StorageReference reference;
@@ -44,4 +44,4 @@ public class FirestoreLoader : MonoBehaviour
         
     }
     
-}   */
+}   

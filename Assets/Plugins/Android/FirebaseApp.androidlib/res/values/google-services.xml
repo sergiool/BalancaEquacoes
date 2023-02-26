@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="firebase_database_url" translatable="false">https://empty-project-95e84.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">449799886125</string>
+  <string name="google_storage_bucket" translatable="false">balanca-de-pratos.appspot.com</string>
+  <string name="project_id" translatable="false">balanca-de-pratos</string>
+  <string name="google_api_key" translatable="false">AIzaSyDRAbATUOTpRBowgXusAnM0ooB9O1L4evU</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDRAbATUOTpRBowgXusAnM0ooB9O1L4evU</string>
+  <string name="google_app_id" translatable="false">1:449799886125:android:87e26ea8213b4ac2826fa4</string>
+  <string name="default_web_client_id" translatable="false">449799886125-7n77etp7fpqi30s0f8lp99j6f4192ket.apps.googleusercontent.com</string>
+</resources>
