@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Firebase;
@@ -100,6 +100,7 @@ public class RegisterAuth : MonoBehaviour
                 GetComponent<LoginAuth>().passwordInputfield.text=password;
                 GetComponent<LoginAuth>().LoginButton();
                 //*/
+                /*
             }
         }
     }
@@ -110,4 +111,4 @@ public class RegisterAuth : MonoBehaviour
         AuthError errorCode=(AuthError)firebaseEx.ErrorCode;
         warningRegisterText.text="Username set failed";
     }
-}
+}*/
