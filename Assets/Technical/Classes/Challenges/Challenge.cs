@@ -8,6 +8,7 @@ namespace Challenges
         public virtual void StartChallenge() { }
         public virtual void StartChallenge(string challengeX, string challengeP) { }
         public virtual void StartChallengeONLYWEIGHT(string[] pes,string nooblocks ) { }
+        public virtual void StartRChallenge() { }
         /*public static void Weightcheck() 
             {
             int _totalWeight=MainBalance.GetTotalWeight;

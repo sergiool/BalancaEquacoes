@@ -53,6 +53,14 @@ namespace Common.Controllers
                 PlayableChallenges[challengeId].StartChallengeONLYWEIGHT(peso,nooblocks);
             }
         }
+        public void StartRChallenge(int challengeId)
+        {
+            if (challengeId != -1)
+            {
+                PlayableChallenges[challengeId].gameObject.SetActive(true);
+                PlayableChallenges[challengeId].StartRChallenge();
+            }
+        }
 
     }
 }

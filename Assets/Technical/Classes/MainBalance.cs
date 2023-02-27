@@ -12,9 +12,30 @@ namespace Balance
         private float _totalWeight = 0;
         private float _totalWeightRightSide = 0;
         private float _totalWeightLeftSide = 0;
+        //private bool _NoWeight = true;
+        
 
         public float GetTotalWeight() => _totalWeight;
 
+        public void RecalculateNoweight()
+        {
+             if(_totalWeightLeftSide==0 && _totalWeightRightSide==0)
+                _NoWeight.SetActive(true);
+            else
+                _NoWeight.SetActive(false);
+        }
+       /* public void RecalculateNoweight()
+        {
+             if(_totalWeightLeftSide==0 && _totalWeightRightSide==0)
+                _NoWeight= true;
+            else
+                _NoWeight= false;
+        }
+        public bool GetNoWeight()
+        {
+            RecalculateNoweight();
+            return _NoWeight;
+        }*/
         public void AddWeight(float weightValue)
         {
             if (weightValue < 0)
@@ -23,6 +44,7 @@ namespace Balance
                 _totalWeightLeftSide += weightValue;
 
             RecalculateTotalWeight();
+            RecalculateNoweight();
         }
         public void RemoveWeight(float weightValue)
         {
@@ -32,6 +54,7 @@ namespace Balance
                 _totalWeightLeftSide -= weightValue;
 
             RecalculateTotalWeight();
+            RecalculateNoweight();
         }
 
         private void RecalculateTotalWeight()
@@ -72,6 +95,8 @@ namespace Balance
         #endregion
 
         #region Game Juices
+        [SerializeField]
+        private GameObject _NoWeight;
         [SerializeField]
         private AudioSource _winSoundFeedback = null;
         [SerializeField]
