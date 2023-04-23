@@ -9,23 +9,9 @@ using Balance;
 
 namespace Challenges
 {
-    /*public class balance1 : MainBalance
-    {
-        float _totalWeight=MainBalance.GetTotalWeight();
-
-                    if (_totalWeight == 0)
-                        /*_answerCorrectionFeedback.text = "Correto !";
-                        _confirmAnswerButton.SetActive(false);
-                        _nextChallengeButton.SetActive(true);
-                        MainBalance.BalancedState();
-                    else
-                        MainBalance.UnbalancedState(_totalWeight);
-
-    }*/
     public class Challenge_1 : Challenge
     {
         public MainBalance MainBalance;
-       // private GameObject[] _weightBlockKitInitialPositions = null;
         [SerializeField]
         private GameObject _nextChallengeButton;
         [SerializeField]
@@ -33,7 +19,6 @@ namespace Challenges
         private float _trueWeight;
         [SerializeField]
         private GameObject _NoWeight;
-        //public bool Semblo=MainBalance.GetNoWeight();
         
         public override void StartChallenge()
         {//***********************************************1
@@ -208,7 +193,26 @@ namespace Challenges
         }
         public void CheckEqui()
         {
-            
+            {
+                if(_GreenButton.activeSelf==true){
+                   if(GameController.Singleton.LevelController.MainBalance.GetNoWeightval()==false)
+                    {
+                    Debug.Log("TACERTO!");  
+                    _answerCorrectionFeedback.text = "Em equiíbrio !";
+                    _nextChallengeButton2.SetActive(true);
+                    }
+                    else{
+                        _answerCorrectionFeedback.text = "Sem pesos !";
+                    }
+                }
+                else{
+                    _confirmAnswerButton.SetActive(false);
+                    _answerCorrectionFeedback.text = "Desbalanceada !";
+                    _nextChallengeButton2.SetActive(false);
+                    Debug.Log("NAO TA");
+                }
+            }
+            /*
             {
                 if(_GreenButton.activeSelf==true){
                    if(_NoWeight.activeSelf==false)
@@ -227,7 +231,7 @@ namespace Challenges
                     _nextChallengeButton2.SetActive(false);
                     Debug.Log("NAO TA");
                 }
-            }
+            }*/
         }
         
         public override void StartRChallenge()

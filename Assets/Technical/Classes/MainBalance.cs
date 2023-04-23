@@ -12,7 +12,7 @@ namespace Balance
         private float _totalWeight = 0;
         private float _totalWeightRightSide = 0;
         private float _totalWeightLeftSide = 0;
-        //private bool _NoWeight = true;
+        private bool _NoWeightval = true;
         
 
         public float GetTotalWeight() => _totalWeight;
@@ -24,18 +24,18 @@ namespace Balance
             else
                 _NoWeight.SetActive(false);
         }
-       /* public void RecalculateNoweight()
+        public void RecalculateNoweightval()
         {
              if(_totalWeightLeftSide==0 && _totalWeightRightSide==0)
-                _NoWeight= true;
+                _NoWeightval= true;
             else
-                _NoWeight= false;
+                _NoWeightval= false;
         }
-        public bool GetNoWeight()
+        public bool GetNoWeightval()
         {
-            RecalculateNoweight();
-            return _NoWeight;
-        }*/
+            RecalculateNoweightval();
+            return _NoWeightval;
+        }
         public void AddWeight(float weightValue)
         {
             if (weightValue < 0)
