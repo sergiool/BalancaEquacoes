@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "449799886125",
+    "firebase_url": "https://empty-project-95e84.firebaseio.com",
+    "project_id": "balanca-de-pratos",
+    "storage_bucket": "balanca-de-pratos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449799886125:android:87e26ea8213b4ac2826fa4",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.BalanceInterface"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449799886125-7n77etp7fpqi30s0f8lp99j6f4192ket.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRAbATUOTpRBowgXusAnM0ooB9O1L4evU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449799886125-7n77etp7fpqi30s0f8lp99j6f4192ket.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

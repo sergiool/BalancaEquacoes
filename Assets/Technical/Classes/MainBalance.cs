@@ -12,9 +12,30 @@ namespace Balance
         private float _totalWeight = 0;
         private float _totalWeightRightSide = 0;
         private float _totalWeightLeftSide = 0;
+        private bool _NoWeightval = true;
+        
 
         public float GetTotalWeight() => _totalWeight;
 
+        public void RecalculateNoweight()
+        {
+             if(_totalWeightLeftSide==0 && _totalWeightRightSide==0)
+                _NoWeight.SetActive(true);
+            else
+                _NoWeight.SetActive(false);
+        }
+        public void RecalculateNoweightval()
+        {
+             if(_totalWeightLeftSide==0 && _totalWeightRightSide==0)
+                _NoWeightval= true;
+            else
+                _NoWeightval= false;
+        }
+        public bool GetNoWeightval()
+        {
+            RecalculateNoweightval();
+            return _NoWeightval;
+        }
         public void AddWeight(float weightValue)
         {
             if (weightValue < 0)
@@ -23,6 +44,7 @@ namespace Balance
                 _totalWeightLeftSide += weightValue;
 
             RecalculateTotalWeight();
+            RecalculateNoweight();
         }
         public void RemoveWeight(float weightValue)
         {
@@ -32,6 +54,7 @@ namespace Balance
                 _totalWeightLeftSide -= weightValue;
 
             RecalculateTotalWeight();
+            RecalculateNoweight();
         }
 
         private void RecalculateTotalWeight()
@@ -43,7 +66,7 @@ namespace Balance
             else
                 UnbalancedState(_totalWeight);
         }
-        private void BalancedState()
+        public void BalancedState()
         {
             _desiredRotationZ = 0;
 
@@ -56,7 +79,7 @@ namespace Balance
             if (_totalWeightLeftSide == 0 && _totalWeightRightSide == 0)
                 _winSoundFeedback.Play();
         }
-        private void UnbalancedState(float totalWeight)
+        public void UnbalancedState(float totalWeight)
         {
             if (totalWeight > 0)
                 _desiredRotationZ = Mathf.Min(25.0f, (_totalWeightLeftSide / _totalWeightRightSide) * 6.875f);
@@ -72,6 +95,8 @@ namespace Balance
         #endregion
 
         #region Game Juices
+        [SerializeField]
+        private GameObject _NoWeight;
         [SerializeField]
         private AudioSource _winSoundFeedback = null;
         [SerializeField]

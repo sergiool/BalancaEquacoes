@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/1_WoodBalance.unity
+    guid: 930ea760cc9d24643b437da851aec0a1
   m_configObjects: {}
