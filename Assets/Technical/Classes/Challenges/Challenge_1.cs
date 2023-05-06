@@ -5,62 +5,37 @@ using UnityEngine.UI;
 using Utility;
 using WeightBlocks;
 using Random = UnityEngine.Random;
+using Balance;
 
 namespace Challenges
 {
     public class Challenge_1 : Challenge
     {
+        public MainBalance MainBalance;
         [SerializeField]
         private GameObject _nextChallengeButton;
+        [SerializeField]
+        private GameObject _nextChallengeButton2;
         private float _trueWeight;
-
+        [SerializeField]
+        private GameObject _NoWeight;
+        
         public override void StartChallenge()
-        {
-            int _desiredHook=0;
-            int _numberOfWeightBlocks;
-            float _trueWeight;
-            float _convertedWeight;
-
-            _confirmAnswerButton.SetActive(true);
+        {//***********************************************1
+        Debug.Log("chegou aqui" );
+            _UnitInput.SetActive(false);
+            _ValueInput.SetActive(false);
+            _BlockFactorytoggle.SetActive(true);
+            _confirmAnswerButton.SetActive(false);
             _nextChallengeButton.SetActive(false);
+            _checkEquiButton.SetActive(false);
+            _BlockFactorytoggle.SetActive(true);
             GameController.Singleton.BlockController.ResetWeightBlocks();
-            _numberOfWeightBlocks = Random.Range(1, 4);
-
-            int randomWeight = Random.Range(-1, 1);
-
-            do
-            {
-                _convertedWeight = Random.Range(-100, 100);
-                _convertedWeight /= 10;
-            } while (_convertedWeight == 0);
-
-            _trueWeight = WeightUnitConverter.TrueWeight(_convertedWeight, 0);
-            _answerInputValue.text = "";
-            _answerCorrectionFeedback.text = "";
-            
-            Debug.Log("Number: " + _numberOfWeightBlocks);
-            
-            for (int i = 0; i < _numberOfWeightBlocks; i++)
-            {
-                if (randomWeight < 0)
-                {
-                    _desiredHook = Random.Range(8, 16);
-                }
-                else
-                {
-                    _desiredHook = Random.Range(0, 8);
-                }
-
-                GameController.Singleton.BlockController.CreateChallengeBlock(randomWeight, _convertedWeight, 0, GameController.Singleton.LevelController.MainBalance.GetHooks()[_desiredHook].transform.position);
-                Debug.Log("True Weight: " + _trueWeight + ", randomWeight: " + randomWeight + ", _convertedWeight: " + _convertedWeight+ ", _desiredHook: " + _desiredHook);
-            }
-
-            if (GameController.Singleton.LevelController.MainBalance.GetTotalWeight() == 0)
-            {
-                GameController.Singleton.BlockController.CreateChallengeBlock(randomWeight, _convertedWeight, 0, GameController.Singleton.LevelController.MainBalance.GetHooks()[_desiredHook].transform.position);
-            }
-
+          
         }
+
+        
+
 
         [SerializeField]
         private InputField _answerInputValue;
@@ -69,7 +44,24 @@ namespace Challenges
         [SerializeField]
         private GameObject _confirmAnswerButton;
         [SerializeField]
+        private GameObject _checkEquiButton;
+        [SerializeField]
         private Text _answerCorrectionFeedback;
+        [SerializeField]
+        private GameObject _GreenButton;
+        [SerializeField]
+        private GameObject _RedButton;
+        [SerializeField]
+        private GameObject _UnitInput;
+        [SerializeField]
+        private GameObject _ValueInput;
+        [SerializeField]
+        private GameObject _BlockFactorybackground;
+        [SerializeField]
+        private GameObject _BlockFactorytoggle;
+       //[SerializeField]
+        //private GameObject _BlockFactorytoggle;
+
         public void CheckAnswer()
         {
             if (_answerInputValue.text != "")
@@ -87,14 +79,19 @@ namespace Challenges
                 }
             }
         }
-
+    
         public override void StartChallenge(string challengeX, string challengeP)
-        {
+        {//******************************************************************2 
             int _desiredHook=0;
             float _convertedWeight;
 
+            _UnitInput.SetActive(true);
+            _ValueInput.SetActive(true);
+            _BlockFactorytoggle.SetActive(true);
             _confirmAnswerButton.SetActive(true);
             _nextChallengeButton.SetActive(false);
+            _checkEquiButton.SetActive(false);
+            
             GameController.Singleton.BlockController.ResetWeightBlocks();
 
 
@@ -158,8 +155,137 @@ namespace Challenges
                 GameController.Singleton.BlockController.CreateChallengeBlock(randomWeight, _convertedWeight, 0, GameController.Singleton.LevelController.MainBalance.GetHooks()[_desiredHook].transform.position);
             }*/
 
-        }
-    }
+        }//**********************************************************************3
+        public override void StartChallengeONLYWEIGHT(string[] peso,string nooblocks )
+        {
+            Vector3 weightBlockPosition=new Vector3(1.378f,0.0f,0.0f);
+            for (int i = 0; i < int.Parse(nooblocks); i++)
+            {
+                
+                GameController.Singleton.BlockController.CreateDefaultBlock(float.Parse(peso[i]), 0, weightBlockPosition);
+                weightBlockPosition.x+=1.0f;
+            }
+            _checkEquiButton.SetActive(true);
+            _confirmAnswerButton.SetActive(false);
+            _nextChallengeButton.SetActive(false);
+            _nextChallengeButton2.SetActive(false);
+            _UnitInput.SetActive(false);
+            _ValueInput.SetActive(false);
+            _BlockFactorytoggle.SetActive(false);
+            _BlockFactorybackground.SetActive(false);
+            _answerInputValue.text = "";
+            _answerCorrectionFeedback.text = "";
+            
+           // float totw=MainBalance._totalWeight;
+           /*
+            if (_totalWeight == 0)
+            {
+                _answerCorrectionFeedback.text = "Correto !";
+                _confirmAnswerButton.SetActive(false);
+                _nextChallengeButton.SetActive(true);
+                Balance.MainBalance.BalancedState();
+            }
+            else
+            {
 
+               Balance.MainBalance.UnbalancedState(_totalWeight);
+              }*/
+        }
+        public void CheckEqui()
+        {
+            {
+                if(_GreenButton.activeSelf==true){
+                   if(GameController.Singleton.LevelController.MainBalance.GetNoWeightval()==false)
+                    {
+                    Debug.Log("TACERTO!");  
+                    _answerCorrectionFeedback.text = "Em equiíbrio !";
+                    _nextChallengeButton2.SetActive(true);
+                    }
+                    else{
+                        _answerCorrectionFeedback.text = "Sem pesos !";
+                    }
+                }
+                else{
+                    _confirmAnswerButton.SetActive(false);
+                    _answerCorrectionFeedback.text = "Desbalanceada !";
+                    _nextChallengeButton2.SetActive(false);
+                    Debug.Log("NAO TA");
+                }
+            }
+            /*
+            {
+                if(_GreenButton.activeSelf==true){
+                   if(_NoWeight.activeSelf==false)
+                    {
+                    Debug.Log("TACERTO!");  
+                    _answerCorrectionFeedback.text = "Em equiíbrio !";
+                    _nextChallengeButton2.SetActive(true);
+                    }
+                    else{
+                        _answerCorrectionFeedback.text = "Sem pesos !";
+                    }
+                }
+                else{
+                    _confirmAnswerButton.SetActive(false);
+                    _answerCorrectionFeedback.text = "Desbalanceada !";
+                    _nextChallengeButton2.SetActive(false);
+                    Debug.Log("NAO TA");
+                }
+            }*/
+        }
+        
+        public override void StartRChallenge()
+        {//***********************************************1
+        Debug.Log("chegou aqui" );
+            int _desiredHook=0;
+            int _numberOfWeightBlocks;
+            float _trueWeight;
+            float _convertedWeight;
+
+            _confirmAnswerButton.SetActive(true);
+            _nextChallengeButton.SetActive(true);
+            _UnitInput.SetActive(true);
+            _ValueInput.SetActive(false);
+            _BlockFactorytoggle.SetActive(true);
+            _BlockFactorybackground.SetActive(true);
+            GameController.Singleton.BlockController.ResetWeightBlocks();
+            _numberOfWeightBlocks = Random.Range(1, 4);
+
+            int randomWeight = Random.Range(-1, 1);
+
+            do
+            {
+                _convertedWeight = Random.Range(-100, 100);
+                _convertedWeight /= 10;
+            } while (_convertedWeight == 0);
+
+            _trueWeight = WeightUnitConverter.TrueWeight(_convertedWeight, 0);
+            _answerInputValue.text = "";
+            _answerCorrectionFeedback.text = "";
+            
+            Debug.Log("Number: " + _numberOfWeightBlocks);
+            
+            for (int i = 0; i < _numberOfWeightBlocks; i++)
+            {
+                if (randomWeight < 0)
+                {
+                    _desiredHook = Random.Range(8, 16);
+                }
+                else
+                {
+                    _desiredHook = Random.Range(0, 8);
+                }
+
+                GameController.Singleton.BlockController.CreateChallengeBlock(randomWeight, _convertedWeight, 0, GameController.Singleton.LevelController.MainBalance.GetHooks()[_desiredHook].transform.position);
+                Debug.Log("True Weight: " + _trueWeight + ", randomWeight: " + randomWeight + ", _convertedWeight: " + _convertedWeight+ ", _desiredHook: " + _desiredHook);
+            }
+
+            if (GameController.Singleton.LevelController.MainBalance.GetTotalWeight() == 0)
+            {
+                GameController.Singleton.BlockController.CreateChallengeBlock(randomWeight, _convertedWeight, 0, GameController.Singleton.LevelController.MainBalance.GetHooks()[_desiredHook].transform.position);
+            }
+
+        }
+    } 
     
 }

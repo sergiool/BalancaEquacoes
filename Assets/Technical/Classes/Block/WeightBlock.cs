@@ -45,9 +45,10 @@ namespace WeightBlocks
         {
             Mass = WeightUnitConverter.TrueWeight(weightValue, unitValue); ;
 
-            if (_weightValueVisualText != null)
+            if (_weightValueVisualText != null&&weightValue>0)
                 _weightValueVisualText.text = weightValue.ToString();
-
+            else if(_weightValueVisualText != null&&weightValue<0)
+                _weightValueVisualText.text = (weightValue*-1).ToString();
             if (_weightUnitVisualText != null)
                 _weightUnitVisualText.text = weightUnitDictionary[unitValue].ToString();
 
